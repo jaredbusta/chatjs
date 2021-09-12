@@ -1,0 +1,25 @@
+{
+  "name": "chatjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" :"nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaredbusta/chatjs.git"
+  },
+  "keywords": [],
+  "author": "Jared Bustamante <jaredbusta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaredbusta/chatjs/issues"
+  },
+  "homepage": "https://github.com/jaredbusta/chatjs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  }
+}

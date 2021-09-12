@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi chat</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="js/sockets.js"></script>
+    <script src="js/index.js"></script>
+    <link href="css/index.css" rel="stylesheet"/>
+</head>
+<body>
+    <h3>mi primer chat aqui</h3>
+
+    <form id="form" accept-charset="uft-8">
+        <section class="login">
+            <label for="user">user <input type="text" id="user"/>  </label>
+            <button type="button" onclick="login()" class="btn-login">Login</button>
+            <span >
+                <ul id="resultado_login" class="fullclick">
+                    
+                </ul>
+                  </span>
+        </section>
+    </form>
+
+    <section class="send_messages">
+        <textarea id="mensaje"></textarea>
+        <button type="button" value="enviar" onclick="enviarMensaje()">Enviar</button>
+        <button type="button" value="ver_usuarios" onclick="verUsuarios()">Ver usuarios</button>
+
+
+    </section>
+    <section id="contenedor-mensajes" class="contenedor-mensajes">
+        <ul id="cajita_chat"> </ul>
+    </section>
+</body>
+</html>
